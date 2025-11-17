@@ -1,58 +1,49 @@
+# 🌐 WebQuiz: Aplicación de Preguntas y Respuestas (HTML, CSS, JavaScript Vanilla)
 
-QuizMaster es un sencillo y adictivo juego de preguntas y respuestas desarrollado en HTML JS CSS para ser renderizado y ejecutado en el navegador web. Pon a prueba tus conocimientos generales a través de múltiples preguntas con opciones de respuesta, obtén feedback instantáneo y descubre tu puntuación final al terminar el quiz. Ideal para practicar HTML CSS y JS o para un rápido desafío mental.
+**WebQuiz** es una aplicación de prueba de conocimientos ("quiz app") completamente funcional, desarrollada utilizando el trío fundamental del desarrollo web: **HTML5** para la estructura, **CSS3** para el diseño interactivo y **JavaScript (Vanilla)** para toda la lógica.
 
-# WebQuiz: Tu Desafío Interactivo en el Navegador
+Este proyecto es un excelente ejemplo de cómo construir una **Single Page Application (SPA)** ligera y dinámica, demostrando el manejo del **DOM (Document Object Model)**, la gestión del estado del juego y la manipulación de eventos sin depender de frameworks o librerías externas.
 
-## 🚀 Descripción del Proyecto
+## 🛠️ Stack Tecnológico
 
-**WebQuiz** es una aplicación de juego de preguntas y respuestas (quiz) diseñada para el navegador web. Desarrollada con las tecnologías fundamentales de la web (**HTML** para la estructura, **CSS** para el estilo y **JavaScript** para la interactividad), este proyecto ofrece una experiencia de usuario atractiva y dinámica. Los usuarios pueden responder a una serie de preguntas, ver sus puntuaciones y obtener feedback sobre sus respuestas.
+| Componente | Tecnología | Propósito Clave |
+| :--- | :--- | :--- |
+| **Estructura** | **HTML5** | Definición semántica de la interfaz del quiz. |
+| **Estilo y Diseño** | **CSS3** | Estilización visual, diseño *responsive* y manejo de la presentación del feedback. |
+| **Lógica de Juego** | **JavaScript (Vanilla)** | Control del flujo de preguntas, captura de respuestas, cálculo de puntuación y manipulación del DOM para mostrar resultados. |
 
-## ✨ Características
+## ✨ Características Frontend
 
-* **Interfaz Amigable:** Diseño limpio y responsive para una experiencia de usuario agradable.
-* **Preguntas Interactivas:** Selecciona tus respuestas con facilidad usando botones de opción.
-* **Puntuación Automática:** Calcula y muestra tu puntuación final al enviar el quiz.
-* **Feedback Visual:** Resalta las respuestas correctas e incorrectas al finalizar el juego.
-* **Fácil de Implementar:** Solo necesitas un navegador web para ejecutar la aplicación.
-
-## 🛠️ Tecnologías Utilizadas
-
-* **HTML5:** Estructura del contenido.
-* **CSS3:** Estilos visuales y diseño.
-* **JavaScript:** Lógica del quiz, interactividad y cálculo de puntuación.
+* **Manipulación Dinámica del DOM:** JavaScript inyecta las preguntas y opciones, y actualiza la interfaz en tiempo real sin recargar la página.
+* **Separación de Intereses:** El contenido (HTML), la presentación (CSS) y el comportamiento (JavaScript) están claramente separados, facilitando el mantenimiento y la extensibilidad.
+* **Modelo de Datos de Preguntas:** Las preguntas se cargan desde un *array* de objetos en JavaScript, demostrando un manejo estructurado de los datos del quiz.
+* **Feedback Visual Instantáneo:** Tras enviar las respuestas, se proporciona una retroalimentación visual clara sobre aciertos y errores.
 
 ## 🚀 Cómo Ejecutar el Proyecto
 
-Para usar WebQuiz, simplemente sigue estos pasos:
+Este proyecto no requiere servidor ni instalación de dependencias. Solo necesitas un navegador web moderno.
 
-1.  **Clona este repositorio** (o descarga los archivos `index.html`, `style.css`, `script.js` en una misma carpeta).
-    
-    git clone https://github.com/santiagourdaneta/Juego-de-Preguntas-y-Respuestas-Quiz-App-en-HTML-JS-CSS/
+### Pasos
+
+1.  **Clonar o Descargar el Repositorio:**
+    ```bash
+    git clone [https://github.com/santiagourdaneta/Juego-de-Preguntas-y-Respuestas-Quiz-App-en-HTML-JS-CSS.git](https://github.com/santiagourdaneta/Juego-de-Preguntas-y-Respuestas-Quiz-App-en-HTML-JS-CSS.git)
     cd Juego-de-Preguntas-y-Respuestas-Quiz-App-en-HTML-JS-CSS/
-  
+    ```
 
-2.  **Abre el archivo `index.html`** en tu navegador web preferido (Chrome, Firefox, Edge, etc.). Puedes hacerlo de las siguientes maneras:
-    * Navega a la carpeta del proyecto y haz doble clic en `index.html`.
-    * Arrastra y suelta el archivo `index.html` directamente en la ventana de tu navegador.
+2.  **Abrir en el Navegador:**
+    Simplemente haz doble clic en el archivo `index.html`. El navegador cargará el código y JavaScript se encargará de inicializar el quiz.
 
-3.  ¡Empieza a responder las preguntas y haz clic en "Enviar Respuestas" para ver tus resultados!
+## 💡 Extensibilidad y Personalización
 
-## 💡 Personalización
+Para modificar el contenido del quiz, solo tienes que editar el array `quizData` dentro del archivo `script.js`. Cada objeto dentro del array debe seguir la siguiente estructura:
 
-Puedes personalizar las preguntas, opciones y respuestas correctas editando el array `quizData` dentro del archivo `script.js`.
-
-
+```javascript
 const quizData = [
-    {
-        question: "¿Cuál es la capital de Perú?",
-        options: ["Arequipa", "Cusco", "Lima", "Trujillo"],
-        correct: 2 // Índice de la respuesta correcta (Lima)
-    },
-    // Añade o modifica más preguntas aquí
+  {
+    question: "...",
+    options: ["...", "...", "..."],
+    correct: 2 // Índice de la respuesta correcta (basado en 0)
+  },
+  // Más preguntas...
 ];
-
-También puedes modificar los estilos en style.css para cambiar la apariencia del quiz.
-
-
-
-
