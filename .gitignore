@@ -1,0 +1,13 @@
+# Archivos del Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de Editor de Código (e.g., VS Code settings)
+.vscode/
+
+# Build/Dist (si se generaran assets comprimidos)
+/dist
+/build
+
+# Logs
+*.log
